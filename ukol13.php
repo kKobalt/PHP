@@ -27,7 +27,6 @@ Vytvořte skript, který obdobně jako v příkladu 1 vytvoří tabulku, ale opr
   <form method="POST" action="ukol13.php" onclick="ukol13.php">
     <input name="pocet" type="text" value="15">
     <input name="btn" type="submit" value="Počet řádků tabulky">
-
   </form>
 
 <?php
@@ -38,7 +37,6 @@ if (isset($_POST["pocet"])) {
     }
 }
 ?>
-
   </table>
 
 
