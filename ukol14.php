@@ -14,26 +14,40 @@ Vytvořte skript, který bude obsahovat asociativní pole, které inicializujte 
     padding:5px;
     text-align:center;
   }
-  input[type="text"] {
-      width: 40px;
+  select {
+      width: 100px;
       text-align: center;
     }
 </style>
 </head>
 
 <body>
-
   <form method="POST" action="ukol14.php">
-    selectb
-    <input name="pocet" type="text" value="15">
-    <input name="btn" type="submit" value="Počet řádků tabulky">
+
+<?php
+$pole = ["jméno" => "Jan", "příjmení" => "Novák", "věk" => 25, "výška" => 186];
+// echo count($pole);
+?>
+
+<select name="selectbox" id="selectbox">
+
+<?php
+foreach ($pole as $key => $value) {
+    echo "<option value='" . $key . "'>" . $value . "</option>";
+}
+
+?>
+  </select>
+  <input type="submit" name="btn">
   </form>
 
 <?php
-
-$pole = ["jméno" => "Jan", "příjmení" => "Novák", "věk" => 25, "výška" => 186];
+if (isset($_POST['btn'])) {
+    echo "<b>" . $_POST["selectbox"] . " </b> je <b>" . $pole[$_POST["selectbox"]] . "</b> (key->value)";
+}
 
 ?>
+
 
 </body>
 
