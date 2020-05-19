@@ -1,0 +1,12 @@
+##.gitignore
+##.src/
+
+.**/
+.**
+*.doc?
+*_rk.*
+/skoleni/*
+
+
+### VS Code ###
+##.vscode/
