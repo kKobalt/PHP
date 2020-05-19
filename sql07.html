@@ -1,0 +1,42 @@
+<!--
+  Vytvořte HTML formulář pro vkládání nového produktu. Formulář bude obsahovat název produktu, cenu a jeho popis. Vytvořte rovněž PHP skript zpracovávající data z formuláře (vložení do databázové tabulky produkt).
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label {
+      font-size: 0.8em;
+      font-family: sans-serif;
+    }
+
+    input,
+    textarea {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <form action="zpracuj_sql07.php" method="POST">
+    <label for="nazev">Název produktu:</label>
+    <input type="text" name="nazev" value="komp">
+    <label for="cena">Cena:</label>
+    <input type="text" name="cena" value="20000">
+    <label for="popis">Popis produktu:</label>
+    <textarea name="popis" cols="40" rows="5">počítačka středně drahá</textarea>
+    <input type="submit" value="Odeslat">
+  </form>
+
+
+</body>
+
+</html>
