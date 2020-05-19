@@ -1,0 +1,29 @@
+th {
+  background: silver;
+  padding: 3px;
+}
+tr,
+td {
+  background: #eee;
+  padding: 3px;
+}
+
+form {
+  margin: 0px;
+}
+label {
+  display: inline;
+  font-size: 0.8em;
+  font-family: sans-serif;
+}
+input {
+  display: block;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+}
+.price {
+  text-align: right;
+}
