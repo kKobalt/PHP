@@ -1,5 +1,4 @@
 <html>
-
 <link rel="stylesheet" href="./sql09.css">
 
 <body>
