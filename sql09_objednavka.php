@@ -1,8 +1,6 @@
 <html>
 <link rel="stylesheet" href="./sql09.css">
 
-
-
 <body>
 
   <form action="sql09_objednavka.php" method="POST">
@@ -18,7 +16,6 @@
   <input type="submit" value="Objednat">
   </form>
   <br /><a href='./sql09.php'>Zpět</a>
-
 
 </body>
 
