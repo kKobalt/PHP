@@ -8,9 +8,6 @@ function createArray()
 
 function emptyArray()
 {unset($_SESSION['counter']);}
-
-function ha()
-{echo "ha";}
 ?>
 
 <!DOCTYPE html>
@@ -37,13 +34,18 @@ Může se hodit: metoda vracející počet prvků v poli se jmenuje count.
     text-align: center;
     margin: 0 10px;
   }
+  input[type="submit"] {
+    width: 250px;
+    text-align: center;
+    margin: 0 10px;
+  }
 </style>
 </head>
 
 <body>
   <form method="POST" action="ukol15.php">
   <input type='text' name='txt' value='text'>
-  <input type='submit' name='sub' value='Přidej'>
+  <input type='submit' name='sub' value="Přidej ('00' pro smazání seznamu)">
 <?php
 // echo "<input type='text' name='txt' value='text'>";
 // echo "<input type='submit' name='sub' value='Přidej'>";
