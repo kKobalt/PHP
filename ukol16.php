@@ -48,6 +48,7 @@ class Trojuhelnik extends GeometrickyObjekt
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="cs">
 <!--
