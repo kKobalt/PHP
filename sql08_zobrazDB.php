@@ -2,14 +2,16 @@
 
 <body>
   <style>
-    th {
-      background: silver;
-      padding: 3px;
-    }
-    tr, td {
-      background: #eee;
-      padding: 3px;
-    }
+  th {
+    background: silver;
+    padding: 3px;
+  }
+
+  tr,
+  td {
+    background: #eee;
+    padding: 3px;
+  }
   </style>
   <table style='border: 1px dotted grey'>
     <tr>
@@ -19,7 +21,7 @@
       <th>popis</th>
     </tr>
 
-<?php
+    <?php
 // echo "<html><body><style>
 // th { background: silver; padding: 3px;}
 // tr, td { background: #eee; padding: 3px;}
@@ -37,12 +39,14 @@ while ($radek = mysqli_fetch_array($vysledek)) {
     echo "<tr><td style='text-align:center'>" . $radek["id_produkt"] . "</td><td>" . $radek["nazev"] . "</td><td>" . $radek["cena"] . "</td><td>" . $radek["popis"], "</td></tr>";
 }
 ?>
-</table>
+  </table>
 
-<?php
+  <?php
 mysqli_close($con);
 // var_dump($con);
 ?>
 
-<br><a href='./sql08.html'>Zpět</a></body></html>
+  <br><a href='./sql08.html'>Zpět</a>
+</body>
 
+</html>

@@ -10,18 +10,18 @@ Vytvořte formulář pro zadání dvou čísel a jedním tlačítkem. Po stisknu
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>10: Formulář pro součet</title>
   <style>
-    input[type="text"] {
-      width: 40px;
-      text-align: center;
-    }
+  input[type="text"] {
+    width: 40px;
+    text-align: center;
+  }
   </style>
 </head>
 
 <body>
   <form method="POST" action="ukol10.php">
-    <input name="prvek1" type="text" value=8> +
-    <input name="prvek2" type="text" value=5>
-    <input name="btn" type="submit" value="=">
+    <input type="text" name="prvek1" value=8> +
+    <input type="text" name="prvek2" value=5>
+    <input type="submit" name="btn" value="=">
 
   </form>
 

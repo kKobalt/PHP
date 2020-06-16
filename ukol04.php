@@ -3,24 +3,25 @@
 <!--
 Vytvořte skript, který vygeneruje tabulku sloužící k rychlému nalezení součinu dvou čísel. Tabulka bude mít rozměr 11 x 11, kde 1, řádek a první sloupec bude záhlaví obsahující čísla 1 – 10. V každé další buňce tabulky pak bude součet čísla v prvním řádku a 1, sloupci.
  -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>04: Tabulka Násobky</title>
-<style>
-  tr, td {
-    background:#eee;
-    padding:5px;
-    text-align:center;
+  <style>
+  tr,
+  td {
+    background: #eee;
+    padding: 5px;
+    text-align: center;
   }
-
-</style>
+  </style>
 </head>
 
 <body>
 
-  <table >
-  <?php
+  <table>
+    <?php
 
 for ($r = 0; $r <= 10; $r++) {
 

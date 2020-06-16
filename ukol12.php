@@ -10,10 +10,10 @@ Vytvořte formulář pro zadání dvou čísel a jedním tlačítkem. Po stisknu
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>12: Formulář pro součet - tlačítka</title>
   <style>
-    input[type="text"] {
-      width: 40px;
-      text-align: center;
-    }
+  input[type="text"] {
+    width: 40px;
+    text-align: center;
+  }
   </style>
 </head>
 
@@ -30,7 +30,7 @@ Vytvořte formulář pro zadání dvou čísel a jedním tlačítkem. Po stisknu
   </form>
 
 
-<?php
+  <?php
 
 if (isset($_POST["prvek1"]) && isset($_POST["prvek2"])) {
 

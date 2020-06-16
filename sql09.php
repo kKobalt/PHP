@@ -11,7 +11,7 @@
       <th>objednávka</th>
     </tr>
 
-<?php
+    <?php
 if (!($con = mysqli_connect("localhost", "eshop", "heslo", "eshop"))) {
     die("Nelze se připojit k databázovému serveru! (mysqli_connet - die)</body></html>");
 }
@@ -34,7 +34,8 @@ mysqli_close($con);
 // var_dump($con);
 ?>
 
-</table>
-<!-- <a href='./sql09.html'>Zpět</a> -->
-</body></html>
+  </table>
+  <!-- <a href='./sql09.html'>Zpět</a> -->
+</body>
 
+</html>

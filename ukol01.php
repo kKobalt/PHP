@@ -27,7 +27,7 @@ Vytvořte skript, který vygeneruje tabulku s dvěma sloupci (dodejte jim nějak
   <?php
 
 for ($i = 1; $i <= 10; $i++) {
-    echo "<tr><td>$i</td><td>řádek</td></tr>";
+    echo "<tr><td>$i</td><td>$i. řádek</td></tr>";
 }
 
 ?>

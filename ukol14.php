@@ -9,39 +9,42 @@ Vytvořte skript, který bude obsahovat asociativní pole, které inicializujte 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>14: Dynamicky generovaný obsah výběrového pole</title>
   <style>
-  th, tr,td {
-    background:#eee;
-    padding:5px;
-    text-align:center;
+  th,
+  tr,
+  td {
+    background: #eee;
+    padding: 5px;
+    text-align: center;
   }
+
   select {
-      width: 100px;
-      text-align: center;
-    }
-</style>
+    width: 100px;
+    text-align: center;
+  }
+  </style>
 </head>
 
 <body>
   <form method="POST" action="ukol14.php">
 
-<?php
+    <?php
 $pole = ["jméno" => "Jan", "příjmení" => "Novák", "věk" => 25, "výška" => 186];
 // echo count($pole);
 ?>
 
-<select name="selectbox" id="selectbox">
+    <select name="selectbox" id="selectbox">
 
-<?php
-foreach ($pole as $key => $value) {
+      <?php
+    foreach ($pole as $key => $value) {
     echo "<option value='" . $key . "'>" . $value . "</option>";
 }
 
 ?>
-  </select>
-  <input type="submit" name="btn">
+    </select>
+    <input type="submit" name="btn">
   </form>
 
-<?php
+  <?php
 if (isset($_POST['btn'])) {
     echo "<b>" . $_POST["selectbox"] . " </b> je <b>" . $pole[$_POST["selectbox"]] . "</b> (key->value)";
 }

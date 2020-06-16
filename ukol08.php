@@ -7,23 +7,24 @@ Vytvořte funkci, která bude mít 3 parametry:
 3.	Druhý operand
 Funkce vrátí výsledek aritmetické operace. Správné chování funkce ověřte na několika příkladech volání.
  -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>08: Kalkulačka</title>
-<style>
-  tr, td {
-    padding:5px;
-    text-align:center;
+  <style>
+  tr,
+  td {
+    padding: 5px;
+    text-align: center;
   }
-
-</style>
+  </style>
 </head>
 
 <body>
   <table>
 
-<?php
+    <?php
 
 function operace(string $oper, int $oper1, int $oper2): float
 {
@@ -62,7 +63,7 @@ echo operace('/', 2, 101) . "<br>";
 
 ?>
 
-</table>
+  </table>
 </body>
 
 </html>

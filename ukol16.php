@@ -68,28 +68,32 @@ Pro ověření funkčnosti:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>16: Abstarktní třída</title>
   <style>
-  th, tr,td {
-    background:#eee;
-    padding:5px;
-    text-align:center;
+  th,
+  tr,
+  td {
+    background: #eee;
+    padding: 5px;
+    text-align: center;
   }
+
   input {
     width: 100px;
     text-align: center;
     margin: 0 10px;
   }
+
   input[type="submit"] {
     width: 250px;
     text-align: center;
     margin: 0 10px;
   }
-</style>
+  </style>
 </head>
 
 <body>
 
 
-<?php
+  <?php
 
 $insta_ctverec = new Ctverec(10);
 $insta_obdelnik = new Obdelnik(10, 20);

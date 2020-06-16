@@ -10,16 +10,19 @@ Vytvořte skript, který obdobně jako v příkladu 1 vytvoří tabulku, ale opr
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>13: Dynamický počet řádků</title>
   <style>
-  th, tr,td {
-    background:#eee;
-    padding:5px;
-    text-align:center;
+  th,
+  tr,
+  td {
+    background: #eee;
+    padding: 5px;
+    text-align: center;
   }
+
   input[type="text"] {
-      width: 40px;
-      text-align: center;
-    }
-</style>
+    width: 40px;
+    text-align: center;
+  }
+  </style>
 </head>
 
 <body>
@@ -29,11 +32,11 @@ Vytvořte skript, který obdobně jako v příkladu 1 vytvoří tabulku, ale opr
     <input name="btn" type="submit" value="Počet řádků tabulky">
   </form>
 
-<?php
+  <?php
 if (isset($_POST["pocet"])) {
     echo " <table> <tr> <th>#</th> <th>$</th> </tr>";
     for ($i = 1; $i <= $_POST["pocet"]; $i++) {
-        echo "<tr><td>$i</td><td>řádek</td></tr>";}
+        echo "<tr><td>$i</td><td>$i. řádek</td></tr>";}
 }
 ?>
 

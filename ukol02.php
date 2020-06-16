@@ -32,7 +32,7 @@ Upravte příklad číslo 1 tak, aby se použil jiný druh cyklu.
 
 $a = 0;
 while (++$a <= 10) {
- echo "<tr><td>$a</td><td>řádek</td></tr>";
+    echo "<tr><td>$a</td><td>$a. řádek</td></tr>";
 }
 ;
 

@@ -24,29 +24,33 @@ Může se hodit: metoda vracející počet prvků v poli se jmenuje count.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>15: SESSION - Přidávání řádků tabulce</title>
   <style>
-  th, tr,td {
-    background:#eee;
-    padding:5px;
-    text-align:center;
+  th,
+  tr,
+  td {
+    background: #eee;
+    padding: 5px;
+    text-align: center;
   }
+
   input {
     width: 100px;
     text-align: center;
     margin: 0 10px;
   }
+
   input[type="submit"] {
     width: 250px;
     text-align: center;
     margin: 0 10px;
   }
-</style>
+  </style>
 </head>
 
 <body>
   <form method="POST" action="ukol15.php">
-  <input type='text' name='txt' value='text'>
-  <input type='submit' name='sub' value="Přidej ('00' pro smazání seznamu)">
-<?php
+    <input type='text' name='txt' value='text'>
+    <input type='submit' name='sub' value="Přidej ('00' pro smazání seznamu)">
+    <?php
 // echo "<input type='text' name='txt' value='text'>";
 // echo "<input type='submit' name='sub' value='Přidej'>";
 
@@ -69,7 +73,7 @@ if (isset($_POST['txt'])) {
 }
 
 ?>
-      </form>
+  </form>
 
 </body>
 

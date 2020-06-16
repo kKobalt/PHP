@@ -9,23 +9,24 @@ Vytvořte formulář obsahujících několik prvků typu radiobutton s popiskem 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>11: Formulář - radiobuttony</title>
-<style>
+  <style>
   img {
     width: 200px;
   }
-</style>
+  </style>
 
 </head>
 
 <body>
-   <form method="POST" action="ukol11.php"> <!-- volá sám sebe -->
+  <form method="POST" action="ukol11.php">
+    <!-- volá sám sebe -->
     <input type="radio" name="pick" value="pic1">buchta<br>
     <input type="radio" name="pick" value="pic2">pekáč<br>
     <input type="radio" name="pick" value="pic3">kozy<br>
     <input type="submit" value="Vyber">
   </form>
   <br>
-<?php
+  <?php
 
 if (isset($_POST['pick'])) {
 
@@ -47,8 +48,7 @@ if (isset($_POST['pick'])) {
     ?>
 
 
-<?php
-// <img src="https://www.albert.cz/-a38173---O-iFC4pd/buchta-papousek" alt="buchta">
+  <?php
 }
 ?>
 
